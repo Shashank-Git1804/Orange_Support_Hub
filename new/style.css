@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border:border-box;
+    
   }
   body {
       font-family: Arial, sans-serif;
@@ -12,7 +13,7 @@
     }
     
     header {
-      background-color: #f26d21cf;
+      background-color: #f26d21;
       padding: 10px 0;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
       position: relative;
@@ -21,7 +22,7 @@
 
     .container1 {
       width:80%;
-      margin: 0 auto;
+      margin: 0;
       position: relative;
       /* background: #e06c28ec; */
       color: white;
@@ -98,6 +99,9 @@
       justify-content: center;
       align-items: center;
     }
+    h1,h2{
+      color: #f26d21;
+    }
   
     #Def{
       display: flex;
@@ -119,6 +123,7 @@
     }
     #Def-h1{
       font-size: 40px;
+      color: #f26d21;
       padding: 1rem 0;
     }
     #Def-h1 span{
@@ -252,7 +257,7 @@
       top: 0;
       padding: 10px;
       border: none;
-      width: 20vh;
+      width: 15vw;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -272,28 +277,9 @@
       cursor: pointer;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    section {
+  section {
       padding: 20px 15px;
+      color: #fff;
       border-bottom: 1px solid #ddd;
     }
     
@@ -315,6 +301,7 @@
       color: white;
       text-align: center;
       padding: 10px 0;
+
     }
   
     /* Search Bar Styling */
