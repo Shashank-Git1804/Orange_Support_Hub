@@ -1,24 +1,17 @@
 
 const apiUrl = `https://clinicaltables.nlm.nih.gov/api/disease_names/v3/search`;
-const api2Url=`https://medlineplus.gov/download/genetics/condition/down-syndrome.xml`
 console.log('hello');
 
 const listElement = document.getElementById("diseaseList");
 const searchBar = document.querySelector("#searchBar");
 const details = document.getElementById("details");
-const def=document.getElementById("Def");
-console.log(def);
-let s=def.firstElementChild;
-console.dir(s)
-let ds=s.firstElementChild;
-console.log(ds.firstElementChild.innerText);
 
 async function fetchDisease(query) {
   try {
     // Fetch disease data from the API
-    let response = await fetch(`${apiUrl}?terms=${query}`);
-    let data = await response.json();
-    console.log(data)
+    const response = await fetch(`${apiUrl}?terms=${query}`);
+    console.log(re)
+    const data = await response.json();
     displayDiseases(data[3]); // Disease names are in index 3
   } catch (error) {
     console.error("Error fetching disease data:", error);
@@ -60,14 +53,10 @@ function displayDiseases(diseases) {
 async function fetchDiseaseDetails(disease) {
   // Clear previous details
   details.innerHTML = "";
-  def.children[0].firstElementChild.children[0].innerText=`${disease}`.toUpperCase();
-  def.firstElementChild.children[1].innerText=``
+
   // Display the selected disease details
   const info = document.createElement("div");
-  info.innerHTML=`<h1>Details about ${disease}</h1>
-  <h3>overview</h3>
-  <p>it is a genetic disorder</p>`
-  // info.textContent = `Details about ${disease}`;
+  info.textContent = `Details about ${disease}`;
   details.appendChild(info);
 }
 
@@ -83,5 +72,4 @@ document.getElementById("searchBar").addEventListener("input", (e) => {
 
   // Fetch diseases for the entered query
   fetchDisease(query);
-  
 });
