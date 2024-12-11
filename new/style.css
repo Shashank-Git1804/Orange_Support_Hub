@@ -12,7 +12,7 @@
     }
     
     header {
-      background-color: #f26d21;
+      background-color: #f26d21cf;
       padding: 10px 0;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
       position: relative;
@@ -91,24 +91,31 @@
   
    .main{
       margin: 0%;
-      margin: 0px 5%;
+      margin: 0px 3%;
       text-align: start;
       line-height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     #Def{
       display: flex;
       justify-content: center;
-      width: 98.5vw;
+      width: 100vw;
       align-items: center;
-      background-color:rgba(252, 140, 4, 0.726);
-      box-shadow: .2px .2px 2px 1px #333;
+      /* background-color:rgba(252, 140, 4, 0.726); */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       color: whitesmoke;
-      position: relative;
-      left: -6%;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      /* background-color: #ee9e70; */
+      /* position: relative;
+      left: -6%; */
     }
     .Def-Container{
       /* padding: 0 7%; */
+      padding: 1rem 1rem 1rem 3rem;
     }
     #Def-h1{
       font-size: 40px;
@@ -117,7 +124,7 @@
     #Def-h1 span{
       display: inline-block;
       border-bottom: 3px solid;
-      padding: 1rem;
+      /* color: #544c4c; */
     }
     .Def-innerdiv{
       text-align: center;
@@ -126,9 +133,9 @@
       align-items: center;
     }
     .Def-p{
-      font-size: 16.6px;
+      font-size: 1.3rem;
       width: 60%;
-      line-height: .7cm;
+      line-height: .8cm;
       /* font-weight: 550; */
       text-align: justify;
     }
@@ -204,9 +211,9 @@
 
 
     .container9 { 
-      max-width: 800px; 
-      margin: 50px auto; 
-      padding-left: 200px; 
+      max-width: 75%; 
+      margin: 30px 10px 10px 15%; 
+      padding:20px 50px 20px 50px; 
       background-color: #ffffff; 
       border-radius: 8px; 
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -223,7 +230,7 @@
     } 
     p { 
       margin-bottom: 1em; 
-      color: #666666;
+      color: #544c4c;
      } 
      ul { 
       list-style-type: none; 
@@ -238,6 +245,7 @@
     }
   
     .sticky-container {
+      margin: 30% 10% 10% 50%;
       align-self: start;
       display: flex;
       position: sticky;
@@ -245,6 +253,7 @@
       padding: 10px;
       border: none;
       width: 20vh;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .aside {
@@ -253,7 +262,7 @@
   }
   
   .aside li {
-      padding: 8px 0;
+      padding: 10px 10px;
       font-size: 16px;
       color: #333;
   }
