@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:border-box;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* background-color: #e06c28ec; */
+      max-height: 100vh;
+    }
+    
+    header {
+      background-color: #f26d21;
+      padding: 10px 0;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+      position: relative;
+    }
+    
+    .container1 {
+      width:80%;
+      margin: 0 auto;
+      position: relative;
+      /* background: #e06c28ec; */
+      color: white;
+      padding: 20px 0;
+      text-align: start;
+    }
+    
+    .container1 h1{
+      font-size: 3rem;
+      position: relative;
+      left: 8rem;
+    }
+  
+    .container1 p{
+      font-size: 1.2rem;
+      position: relative;
+      left: 8rem;
+    }
+  
+    .logo{
+      height: 10em;
+      width: 6em;
+      background-image: url(/new/logo.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 1rem;
+      
+    }
+    
+  
+   nav{
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #333;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0;
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 5px 0;
+      list-style: none;
+    }
+    
+    nav ul li{
+      margin: 0 15px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+  
+   .main{
+      margin: 0%;
+      margin: 0px 5%;
+      text-align: start;
+      line-height: 30px;
+    }
+  
+    #Def{
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      align-items: center;
+      background-color:rgba(252, 140, 4, 0.726);
+      box-shadow: .2px .2px 2px 1px #333;
+      color: whitesmoke;
+      position: relative;
+      left: -6%;
+    }
+    .Def-Container{
+      /* padding: 0 7%; */
+    }
+    #Def-h1{
+      font-size: 40px;
+      padding: 1rem 0;
+    }
+    #Def-h1 span{
+      display: inline-block;
+      border-bottom: 3px solid;
+      padding: 1rem;
+    }
+    .Def-innerdiv{
+      text-align: center;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    .Def-p{
+      font-size: 16.6px;
+      width: 60%;
+      line-height: .7cm;
+      /* font-weight: 550; */
+      text-align: justify;
+    }
+    .sectionDiv{
+      display: flex;
+      margin: 10px 0;
+      gap: 15px;
+      /* background-color: blue; */
+    }
+
+    #diseaseList{
+      width: 26rem;
+      cursor: pointer;
+      display:contents;
+
+    }
+    
+    .section1{
+      /* background-color: antiquewhite; */
+      width: 300%;
+      box-shadow: .2px .2px 2px 1px #333;
+    }
+  
+    .top-Container{
+      margin-top: 1rem;
+    }
+  
+    .top-h2{
+      text-align: start;
+      font-size: 2.2rem;
+      padding: 1rem;
+    }
+  
+    .top-innerdiv{
+      padding: 1rem 1.5rem;
+      text-align: justify;
+      border-bottom: 1px solid #ddd;
+    }
+  
+  .genetic-disorders-list{
+    line-height: 35px;
+    font-size: larger;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    .section2{
+      position: sticky;
+      /* background-color: aquamarine; */
+      /* border: 1px solid; */
+      /* width: 10%; */
+      height: auto;
+      top:0px;
+      right: 0%;
+      box-shadow: .2px .2px 2px 1px #333;
+    }
+  
+    .content{
+      text-align: center;
+    }
+  
+    .listofcontent{
+      line-height: 2rem;
+      font-size: larger;
+      margin: 30px 0px;
+      padding: 0 10px;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    section {
+      padding: 20px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    section h2 {
+      /* color: #f26d21; */
+      text-align: center;
+    }
+  
+    #features p{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      position: relative;
+      /* font-weight: bold; */
+      overflow:auto;
+    }
+    
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    /* Search Bar Styling */
+  #searchForm {
+      margin: 15px;
+      width: 30%;
+      color: #d85a1b;
+      background-color: #fff;
+      border-radius: 5px;
+      text-align: center;
+      /* font-size: smaller; */
+      position: absolute;
+      right: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #searchBar {
+      padding: 10px;
+      min-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      border: none;
+      /* border-right: 1px solid; */
+      /* border-top-right-radius:0 ; */
+      /* border-bottom-right-radius: 0%; */
+    }
+    
+    #searchBar::placeholder{
+      font-size: medium;
+      font-family:serif ;
+      white-space: nowrap;
+    }
+  
+    #diseaseList{
+      border: none;
+      background-color: #333;
+      color: whitesmoke;
+      position: absolute;
+      right: 2rem;
+      top: 3.2rem;
+      line-height: 1.5;
+      box-shadow: 1px 1px 1px 1px #333;
+      border-radius: 5px;
+      /* visibility: hidden; */
+    }
+
+    .disease-card{
+      background-color: transparent;
+      border-bottom: 1px solid #ccc;
+    }
